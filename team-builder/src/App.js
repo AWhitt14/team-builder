@@ -1,24 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import { Link, Route, Switch } from 'react-router-dom';
 import './App.css';
+import Cards from './components/Cards';
+import Form from './components/Form';
+
 
 function App() {
+  const [teamList, setTeam] = useState([
+    {Name: 'Alex Whitt', Email: 'whitta14@gmail.com', Role: 'Couch Potato'}
+  ]);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <nav>
+        <Link to='/' className='link'>Home</Link>
+        <Link to='/join' className='link'>Join Team</Link>
+      </nav>
+      <Switch>
+      <Route exact path='/'>
+        <Cards team={teamList}/>
+      </Route>
+      <Route path='/join'>
+        <Form team={teamList} setTeam={setTeam}/>
+      </Route>
+      </Switch>
     </div>
   );
 }
