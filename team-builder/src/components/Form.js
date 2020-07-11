@@ -28,21 +28,24 @@ const Form = props => {
 
     const handleSubmit = event => {
       event.preventDefault();
+      if(Name && Email && Role){
       props.setTeam([...props.team, { Name, Email, Role }]);
-      alert(`${Name} has been added`);
+      alert(`${Name} has been added`);}
+      else( alert(`please complete all fields`));
     };
 
     return(
         <div className='box'>
             <form className='form' onSubmit={handleSubmit}>
 
-            <input onChange={handleName} type='text' placeholder='Name' name='Name' value={Name}/>
+              <h2> Tell us about yourself!</h2>
+             <input className='content' onChange={handleName} type='text' placeholder='Name' name='Name' value={Name}/>
 
-            <input onChange={handleEmail} type='text' placeholder='Email' name='Email' value={Email} />
+             <input className='content' onChange={handleEmail} type='text' placeholder='Email' name='Email' value={Email} />
 
-            <input onChange={handleRole} type='text' placeholder='Role' name='Role' value={Role}/>
+             <input className='content' onChange={handleRole} type='text' placeholder='Role' name='Role' value={Role}/>
 
-            <button type="submit">Submit</button>
+             <button className='b1' type="submit">Submit</button>
             </form>
         </div>
     )

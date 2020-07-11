@@ -8,14 +8,26 @@
 }
 
 .form {
-    background-color: yellow;
-    color: white;
+    background-color: red;
+    border: 3px solid darkred;
     width: 50%;
     height: 100%;
     margin: 5%;
-
     padding: 1%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     
 }
+
+.content {
+    border: 2px solid black;
+    width: 50%;
+    margin: 2%;
+    text-align: center;
+}
+
+.b1 {
+    width: 15%;
+}
+

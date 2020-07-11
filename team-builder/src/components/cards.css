@@ -7,6 +7,7 @@
 }
 .card {
     background-color: red;
+    border: 3px solid darkred;
     color: white;
     width: 30%;
     margin-top: 5%;
