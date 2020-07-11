@@ -31,3 +31,7 @@
     width: 15%;
 }
 
+.names {
+    display: flex;
+    justify-content: space-between;
+}

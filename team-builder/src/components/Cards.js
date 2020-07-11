@@ -8,8 +8,8 @@ const PlayerCard = props => {
       {props.team.map(e => (
         
         <div  key={e.Role + e.Name} className='card'>
-          <h2>{e.Role}</h2>
-          <p>{e.Name}</p>
+          <h2 className='role'>{e.Role}</h2>
+      <p>{e.fName} {e.lName}</p>
           <p>{e.Email}</p>
         </div>
       ))}

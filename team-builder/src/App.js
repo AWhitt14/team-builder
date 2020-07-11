@@ -7,7 +7,7 @@ import Form from './components/Form';
 
 function App() {
   const [teamList, setTeam] = useState([
-    {Name: 'Alex Whitt', Email: 'whitta14@gmail.com', Role: 'Couch Potato'}
+    {fName: 'Alex', lName: 'Whitt', Email: 'whitta14@gmail.com', Role: 'Couch Potato'}
   ]);
   return (
     <div>
