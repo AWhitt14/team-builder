@@ -1,0 +1,20 @@
+html {
+  background-color: #222a2e;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+}
+
+nav {
+  text-align: center;
+  margin-top: 2%;
+  display:flex;
+  justify-content: space-evenly;
+}
+
+.link {
+  color: white;
+  
+}

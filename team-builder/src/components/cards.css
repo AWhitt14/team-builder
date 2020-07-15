@@ -1,0 +1,18 @@
+.box {
+    
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.card {
+    background-color: red;
+    border: 3px solid darkred;
+    color: white;
+    width: 30%;
+    margin-top: 5%;
+    
+}
+.role {
+    border-bottom: 2px dashed #222a2e;
+}
